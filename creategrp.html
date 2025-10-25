@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Study Group - StudyConnect</title>
+  <link rel="stylesheet" href="createstyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="logo.png" alt="StudyConnect">
+        <span>StudyConnect</span>
+      </div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="creategrp.html" class="nav-link active">Create Group</a>
+        <a href="findgrp.html" class="nav-link">Find Groups</a>
+        <a href="signin.html" class="nav-link">Sign In</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="create-section">
+    <div class="container">
+      <div class="create-header">
+        <div class="header-content">
+          <h1>Create Your Study Group</h1>
+          <p>Start building your learning community today</p>
+        </div>
+        <div class="header-illustration">
+          <i class="fas fa-users"></i>
+        </div>
+      </div>
+
+      <div class="create-content">
+        <div class="form-container">
+          <form class="create-form" id="createForm">
+            <div class="form-section">
+              <h3><i class="fas fa-info-circle"></i> Basic Information</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="groupname">Group Name</label>
+                  <input type="text" id="groupname" name="groupname" placeholder="Enter group name" required>
+                </div>
+                <div class="form-group">
+                  <label for="course">Course</label>
+                  <input type="text" id="course" name="course" placeholder="e.g., Computer Science" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="e.g., Data Structures" required>
+                </div>
+                <div class="form-group">
+                  <label for="level">Level</label>
+                  <select id="level" name="level" required>
+                    <option value="">Select level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3><i class="fas fa-calendar-alt"></i> Schedule & Details</h3>
+              
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe your study group goals and what you plan to cover..." required></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="meetingtime">First Meeting</label>
+                  <input type="datetime-local" id="meetingtime" name="meetingtime" required>
+                </div>
+                <div class="form-group">
+                  <label for="frequency">Meeting Frequency</label>
+                  <select id="frequency" name="frequency" required>
+                    <option value="">Select frequency</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="biweekly">Bi-weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="flexible">Flexible</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="maxMembers">Max Members</label>
+                  <input type="number" id="maxMembers" name="maxMembers" min="2" max="20" value="6" required>
+                </div>
+                <div class="form-group">
+                  <label for="location">Meeting Location</label>
+                  <input type="text" id="location" name="location" placeholder="e.g., Library, Online, Campus" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn btn-secondary" onclick="window.history.back()">
+                <i class="fas fa-arrow-left"></i> Back
+              </button>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Create Group
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="tips-container">
+          <div class="tips-card">
+            <h3><i class="fas fa-lightbulb"></i> Tips for Success</h3>
+            <ul>
+              <li><i class="fas fa-check"></i> Choose a clear, descriptive group name</li>
+              <li><i class="fas fa-check"></i> Set realistic meeting schedules</li>
+              <li><i class="fas fa-check"></i> Define specific learning goals</li>
+              <li><i class="fas fa-check"></i> Keep group size manageable (4-8 members)</li>
+              <li><i class="fas fa-check"></i> Choose accessible meeting locations</li>
+            </ul>
+          </div>
+
+          <div class="stats-card">
+            <h3><i class="fas fa-chart-bar"></i> StudyConnect Stats</h3>
+            <div class="stat-item">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Active Groups</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10K+</span>
+              <span class="stat-label">Students Connected</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">95%</span>
+              <span class="stat-label">Success Rate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Group Created Successfully!</h3>
+        <span class="close" id="closeModal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="success-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <p>Your study group has been created and is now available for others to join!</p>
+        <div class="group-details" id="groupDetails"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="createAnotherBtn">Create Another</button>
+        <button class="btn btn-primary" id="viewGroupsBtn">View All Groups</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="creategrp.js"></script>
+</body>
+</html>

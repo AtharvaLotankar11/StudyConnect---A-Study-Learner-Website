@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - StudyConnect</title>
+  <link rel="stylesheet" href="contactstyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="logo.png" alt="StudyConnect">
+        <span>StudyConnect</span>
+      </div>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="creategrp.html" class="nav-link">Create Group</a>
+        <a href="findgrp.html" class="nav-link">Find Groups</a>
+        <a href="signin.html" class="nav-link">Sign In</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-header">
+        <h1>Get in Touch</h1>
+        <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>Send us an email and we'll get back to you within 24 hours.</p>
+            <a href="mailto:support@studyconnect.com">support@studyconnect.com</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>Speak directly with our support team during business hours.</p>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Us</h3>
+            <p>Come visit our office for in-person support and consultations.</p>
+            <address>
+              123 Education Street<br>
+              Learning City, LC 12345<br>
+              United States
+            </address>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Business Hours</h3>
+            <p>Our support team is available during these hours:</p>
+            <div class="hours">
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday: 10:00 AM - 4:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <h3>Send us a Message</h3>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="technical">Technical Support</option>
+                <option value="account">Account Issues</option>
+                <option value="feature">Feature Request</option>
+                <option value="bug">Bug Report</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <p>The passionate developers behind StudyConnect</p>
+        
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h4>Khushi Singh</h4>
+            <p class="team-role">Group Leader & Backend Developer</p>
+            <p class="team-description">Leading the team with expertise in backend development and system architecture.</p>
+            <div class="team-contact">
+              <a href="tel:+919321622644"><i class="fas fa-phone"></i> +91 93216 22644</a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h4>Atharva Lotankar</h4>
+            <p class="team-role">Deputy Leader & Frontend Developer</p>
+            <p class="team-description">Crafting beautiful user interfaces and ensuring seamless user experiences.</p>
+            <div class="team-contact">
+              <a href="tel:+919320398763"><i class="fas fa-phone"></i> +91 93203 98763</a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h4>Bhumika Patil</h4>
+            <p class="team-role">Frontend Developer</p>
+            <p class="team-description">Specializing in responsive design and interactive web components.</p>
+            <div class="team-contact">
+              <a href="tel:+917559424682"><i class="fas fa-phone"></i> +91 75594 24682</a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h4>Krish Dambir</h4>
+            <p class="team-role">Backend Developer</p>
+            <p class="team-description">Building robust server-side solutions and database management systems.</p>
+            <div class="team-contact">
+              <a href="tel:+919833774597"><i class="fas fa-phone"></i> +91 98337 74597</a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h4>Krish Gupta</h4>
+            <p class="team-role">Frontend Developer</p>
+            <p class="team-description">Creating intuitive user interfaces with modern web technologies.</p>
+            <div class="team-contact">
+              <a href="tel:+918080473728"><i class="fas fa-phone"></i> +91 80804 73728</a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h4>Tanay Bora</h4>
+            <p class="team-role">Backend Developer</p>
+            <p class="team-description">Developing scalable backend services and API integrations.</p>
+            <div class="team-contact">
+              <a href="tel:+919987382529"><i class="fas fa-phone"></i> +91 99873 82529</a>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <h4>Dev Chandiramani</h4>
+            <p class="team-role">QA & Testing Specialist</p>
+            <p class="team-description">Ensuring quality through comprehensive testing and performance optimization.</p>
+            <div class="team-contact">
+              <a href="tel:+919028338338"><i class="fas fa-phone"></i> +91 90283 38338</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Message Sent Successfully!</h3>
+        <span class="close" id="closeModal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="success-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <p>Thank you for contacting us! We've received your message and will get back to you within 24 hours.</p>
+        <div class="message-details" id="messageDetails"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="closeSuccessBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="logo.png" alt="StudyConnect">
+            <span>StudyConnect</span>
+          </div>
+          <p>Empowering students through collaborative learning and academic excellence.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="creategrp.html">Create Group</a></li>
+            <li><a href="findgrp.html">Find Groups</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 StudyConnect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      const successModal = document.getElementById('successModal');
+      const closeModal = document.getElementById('closeModal');
+      const closeSuccessBtn = document.getElementById('closeSuccessBtn');
+      const messageDetails = document.getElementById('messageDetails');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          const firstName = document.getElementById('firstName').value.trim();
+          const lastName = document.getElementById('lastName').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const subject = document.getElementById('subject').value;
+          const message = document.getElementById('message').value.trim();
+
+          if (!firstName || !lastName || !email || !subject || !message) {
+            showNotification('Please fill in all required fields.', 'error');
+            return;
+          }
+
+          // Simulate sending message
+          messageDetails.innerHTML = `
+            <div class="message-info">
+              <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Subject:</strong> ${subject}</p>
+            </div>
+          `;
+
+          successModal.style.display = 'block';
+          contactForm.reset();
+        });
+      }
+
+      // Modal close handlers
+      if (closeModal) {
+        closeModal.addEventListener('click', () => successModal.style.display = 'none');
+      }
+
+      if (closeSuccessBtn) {
+        closeSuccessBtn.addEventListener('click', () => successModal.style.display = 'none');
+      }
+
+      // Close modal when clicking outside
+      window.addEventListener('click', function(event) {
+        if (event.target === successModal) {
+          successModal.style.display = 'none';
+        }
+      });
+
+      // Notification system
+      function showNotification(message, type = 'info') {
+        const existingNotifications = document.querySelectorAll('.notification');
+        existingNotifications.forEach(notification => {
+          if (notification.parentNode) {
+            notification.parentNode.removeChild(notification);
+          }
+        });
+
+        const notification = document.createElement('div');
+        notification.className = `notification notification-${type}`;
+        notification.innerHTML = `
+          <div class="notification-content">
+            <span>${message}</span>
+            <button class="notification-close">&times;</button>
+          </div>
+        `;
+
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          if (notification.parentNode) {
+            notification.parentNode.removeChild(notification);
+          }
+        }, 5000);
+
+        notification.querySelector('.notification-close').addEventListener('click', () => {
+          if (notification.parentNode) {
+            notification.parentNode.removeChild(notification);
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
